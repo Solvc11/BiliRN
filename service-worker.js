@@ -1,9 +1,9 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open('biliapp-v1').then(function(cache) {
+    caches.open('bilirn-v1').then(function(cache) {
       return cache.addAll([
-        '/',
-        '/index.html'
+        './',
+        './index.html'
       ]);
     })
   );
